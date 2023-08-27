@@ -2,9 +2,9 @@ import React from "react";
 
 const VideoCard = ({ info }) => {
   return (
-    <div className="m-1 p-2 w-72 mb-5">
+    <div className="p-2 w-72 mb-2">
       <img
-        className="rounded-xl"
+        className="rounded-xl hover:opacity-60 transition-opacity duration-300"
         src={info?.snippet?.thumbnails?.medium?.url}
         alt="thumails"
       />
@@ -20,7 +20,7 @@ const VideoCard = ({ info }) => {
 export const AddVideoCard = ({ info }) => {
   return (
     <div className="border border-red-900 m-1 p-1">
-      <VideoCard info ={info}/>
+      <VideoCard info={info} />
     </div>
   );
 };

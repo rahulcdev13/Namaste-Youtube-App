@@ -51,25 +51,25 @@ const Header = () => {
 
   return (
     <div className="grid grid-flow-col p-5 shadow-lg ">
-      <div className="flex col-span-1">
+      <div className="flex col-span-1 text-3xl">
         <img
           onClick={() => handleToggleMenu()}
-          className="h-8 cursor-pointer"
+          className="h-[1.8rem] cursor-pointer"
           src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp"
           alt="hamburger-menu"
         />
         <a href="/">
           <img
-            className="h-8 mx-2"
-            src="https://i.insider.com/59a59a8d79bbfd1d008b601a?width=1200&format=jpeg"
+            className="h-[1.8rem] mx-2"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1200px-YouTube_Logo_2017.svg.png"
             alt="Youtube-logo"
           />
         </a>
       </div>
-      <div className=" flex col-span-10 px-11 ">
+      <div className=" flex col-span-10 pl-14">
         <input
-          className="w-1/2 border border-gray-400 p-1 rounded-l-full"
-          placeholder=" 🔍 Search"
+          className="w-1/2 border border-gray-400 p-1 pl-3 rounded-l-full"
+          placeholder="Search..."
           type="text"
           onChange={(e) => {
             setSearchQuery(e.target.value);
@@ -105,11 +105,11 @@ const Header = () => {
           alt="mic-icon"
         />
       </div>
-      <div className="flex">
-        <BiVideoPlus className="h-8 mr-5" />
-        <BsBell className="h-8 mr-7" />
+      <div className="flex col-span-1">
+        <BiVideoPlus className="h-8 mr-7 text-3xl" />
+        <BsBell className="h-8 mr-7 text-2xl" />
         <img
-          className="h-8 col-span-1"
+          className="h-8"
           src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
           alt="user-logo"
         />

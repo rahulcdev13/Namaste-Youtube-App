@@ -1,22 +1,36 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { AiOutlineHome ,AiOutlineLike,AiOutlineShopping,AiOutlineSetting} from "react-icons/ai";
-import { MdOutlineSubscriptions,MdOutlineVideoLibrary,MdOutlineWatchLater,MdOutlineLiveTv,MdOutlineSportsSoccer } from "react-icons/md";
+import {
+  AiOutlineHome,
+  AiOutlineLike,
+  AiOutlineShopping,
+  AiOutlineSetting,
+} from "react-icons/ai";
+import {
+  MdOutlineSubscriptions,
+  MdOutlineVideoLibrary,
+  MdOutlineWatchLater,
+  MdOutlineLiveTv,
+  MdOutlineSportsSoccer,
+} from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
 import { BsPlayBtn } from "react-icons/bs";
-import { GoVideo} from "react-icons/go";
-import {HiTrendingUp} from "react-icons/hi";
-import {IoGameControllerOutline,IoMusicalNotesOutline,IoNewspaperOutline} from "react-icons/io5"
-import {BiMoviePlay,BiHelpCircle} from "react-icons/bi";
-import {FaShopify,FaUser,FaCircleUser} from "react-icons/fa6";
-import {PiStudentFill} from "react-icons/pi";
-import {FcStart,FcFeedback,FcManager,FcPortraitMode} from "react-icons/fc";
-import {ImYoutube2} from "react-icons/im";
-import {SiYoutubemusic} from "react-icons/si";
-import {VscReport} from "react-icons/vsc"
-import {CiYoutube} from "react-icons/ci";
-
+import { GoVideo } from "react-icons/go";
+import { HiTrendingUp } from "react-icons/hi";
+import {
+  IoGameControllerOutline,
+  IoMusicalNotesOutline,
+  IoNewspaperOutline,
+} from "react-icons/io5";
+import { BiMoviePlay, BiHelpCircle } from "react-icons/bi";
+import { FaShopify, FaUser, FaCircleUser } from "react-icons/fa6";
+import { PiStudentFill } from "react-icons/pi";
+import { FcStart, FcFeedback, FcManager, FcPortraitMode } from "react-icons/fc";
+import { ImYoutube2 } from "react-icons/im";
+import { SiYoutubemusic } from "react-icons/si";
+import { VscReport } from "react-icons/vsc";
+import { CiYoutube } from "react-icons/ci";
 
 const Sidebar = () => {
   const isToggleMenu = useSelector((state) => state.app.isMenuOpen);
@@ -61,7 +75,7 @@ const Sidebar = () => {
         <li className="py-2 flex hover:bg-gray-200 rounded-lg pl-2">
           <Link to="/" className="flex">
             {" "}
-            <GrHistory  className="mr-5 mt-1 text-xl" />
+            <GrHistory className="mr-5 mt-1 text-xl" />
             History
           </Link>
         </li>
@@ -200,7 +214,6 @@ const Sidebar = () => {
           <Link to="/" className="flex">
             {" "}
             <ImYoutube2 className="mr-5 mt-1 bg-red text-xl" />
-            
             Youtube Premium
           </Link>
         </li>

@@ -5,6 +5,8 @@ const ButtonList = () => {
   const btnList = [
     "All",
     "Music",
+    "Javascript",
+    "Comedy",
     "Bollywood",
     "Live",
     "News",
@@ -17,24 +19,12 @@ const ButtonList = () => {
   ];
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex">
       {btnList.map((btnName) => {
         return ( 
             <Buttons name={btnName} key={btnName} /> 
         );
-      })}
-      {/* <Buttons name="All" />
-      <Buttons name="Music" />
-      <Buttons name="Mixes" />
-      <Buttons name="Bollywood" />
-      <Buttons name="Cooking" />
-      <Buttons name="Live" />
-      <Buttons name="News" />
-      <Buttons name="Sports" />
-      <Buttons name="Movies" />
-      <Buttons name="Rubix" />
-      <Buttons name="cubastic_rahul" /> 
-      <Buttons name="Sports" />  */}
+      })} 
     </div>
   );
 };
