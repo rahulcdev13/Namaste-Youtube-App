@@ -9,7 +9,7 @@ const VideoCard = ({ info }) => {
         alt="thumails"
       />
       <ul>
-        <li className="font-bold py-2 text-gray">{info?.snippet?.title}</li>
+        <li className="font-bold py-2 text-gray text-ellipsis overflow-hidden">{info?.snippet?.title}</li>
         <li>{info?.snippet?.channelTitle}</li>
         <li>{info?.statistics?.viewCount} Views</li>
       </ul>

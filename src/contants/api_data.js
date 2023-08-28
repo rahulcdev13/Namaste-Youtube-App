@@ -7,3 +7,5 @@ export const YOUTUBE_SEARCH_API =
   "https://corsproxy.io/?http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 // export const MY_SUBSCRIBERS = `https://youtube.googleapis.com/youtube/v3/subscriptions?part=snippet%2CcontentDetails&mine=true&key=${GOOGLE_API_KEY}`;
+
+export const LIVE_CHAT_COUNT = 250;

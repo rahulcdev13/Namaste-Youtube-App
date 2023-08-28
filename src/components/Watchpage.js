@@ -10,6 +10,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa6";
 import CommentsContainer from "./CommentsContainer";
 import ShimmerWatch from "../ShimmerUI/ShimmerWatch";
+import LiveChat from "./LiveChat";
 
 const Watchpage = () => {
   const dispatch = useDispatch();
@@ -104,13 +105,7 @@ const Watchpage = () => {
                 <div className="m-2 rounded-lg shadow-sm bg-gray-100 p-2 ">
                   <p className="font-bold">
                     {video?.statistics?.viewCount} Views 😎{" "}
-                    {video?.snippet?.publishedAt}
-                    {/* <div>
-                      {video?.snippet?.tags?.map((tag) => {
-                        console.log(tag[2]);
-                        return <></>;
-                      })}
-                    </div> */}
+                    {video?.snippet?.publishedAt} 
                   </p>
                   <p>{video?.snippet?.description}</p>
                 </div>
@@ -127,6 +122,9 @@ const Watchpage = () => {
         </div>
         {/* Suggestion video right sidebar section  */}
         <div className="flex flex-col flex-wrap overscroll-y-auto	">
+          <div>
+            <LiveChat />
+          </div>
           {suggestionVideo.map((info) => {
             return (
               <>
@@ -138,7 +136,7 @@ const Watchpage = () => {
                       alt="thumails"
                     />
                     <ul className="ml-2">
-                      <li className="font-bold text-sm text-gray">
+                      <li className="font-bold text-sm text-gray w-[28rem] text-ellipsis overflow-hidden "> 
                         {info?.snippet?.title}
                       </li>
                       <li className="text-sm">{info?.snippet?.channelTitle}</li>

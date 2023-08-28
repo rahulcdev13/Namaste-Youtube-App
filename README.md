@@ -156,3 +156,10 @@ Debuoncing with 200ms
   ]
   }
   ]
+====================================
+
+web sockets
+API Polling
+================
+check live chating count
+document.getElementsByTagName("yt-live-chat-text-message-renderer").length;
