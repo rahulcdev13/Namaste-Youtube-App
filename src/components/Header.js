@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { togglemenu } from "../utils/appSlice";
 import { YOUTUBE_SEARCH_API } from "../contants/api_data";
 import { cacheResults } from "../utils/searchSlice";
-import DarkMode from "../DarkMode/DarkMode";
+// import DarkMode from "../DarkMode/DarkMode";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -51,7 +51,7 @@ const Header = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-5 shadow-3xl">
+    <div className="grid grid-flow-col p-5 shadow-lg">
       <div className="flex col-span-1 text-3xl">
         <img
           onClick={() => handleToggleMenu()}
@@ -106,8 +106,7 @@ const Header = () => {
           alt="mic-icon"
         />
       </div>
-      <div>
-        <DarkMode />
+      <div> 
       </div>
       <div className="flex col-span-1">
         <BiVideoPlus className="h-8 mr-7 text-3xl" />
