@@ -5,6 +5,7 @@ const appSlice = createSlice({
     initialState:{
         isMenuOpen:true
     },
+    
     reducers:{
         togglemenu: (state)=>{
             state.isMenuOpen = !state.isMenuOpen;
