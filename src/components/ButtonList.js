@@ -13,8 +13,8 @@ const ButtonList = () => {
     "Cooking",
     "Sports",
     "Movies",
-    "Hollywood",
-    "Rubix",
+    // "Hollywood",
+    // "Rubix",
     "Cubastic_rahul",
   ];
 

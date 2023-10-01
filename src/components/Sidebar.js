@@ -40,7 +40,7 @@ const Sidebar = () => {
 
   // return !isToggleMenu ? null : (
   return (
-    <div className="p-5 shadow-lg w-1/6 h-screen overflow-y-auto">
+    <div className="p-5 shadow-lg h-screen overflow-y-auto">
       <ul>
         <li className="py-2 flex hover:bg-gray-200 rounded-lg pl-2 font-bold">
           <Link to="/" className="flex">

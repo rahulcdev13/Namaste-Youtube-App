@@ -2,7 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.app{
-    background-color: var(--body_background);
-}
+ 

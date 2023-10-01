@@ -48,7 +48,7 @@ const Watchpage = () => {
   return videoInfo?.length === 0 ? (
     <ShimmerWatch />
   ) : (
-    <div className="m-2 ml-5 mr-5">
+    <div className="m-2 ml-5 mr-5 flex flex-wrap">
       <div className="flex m-5">
         <div>
           {/* Video watch iframe Section */}
@@ -67,7 +67,7 @@ const Watchpage = () => {
               <>
                 {/* Subscriber Section */}
                 <div key={video.id}>
-                  <h1 className="font-bold text-xl m-2">
+                  <h1 className="text-ellipsis overflow-hidden font-bold text-xl m-2">
                     {video?.snippet?.title}
                   </h1>
                   <div className="flex">
@@ -102,7 +102,7 @@ const Watchpage = () => {
                   </div>
                 </div>
                 {/* Video Details Section */}
-                <div className="m-2 rounded-lg shadow-sm bg-gray-100 p-2 ">
+                <div className="m-2 rounded-lg shadow-sm bg-gray-100 p-2">
                   <p className="font-bold">
                     {video?.statistics?.viewCount} Views 😎{" "}
                     {video?.snippet?.publishedAt} 
@@ -121,7 +121,7 @@ const Watchpage = () => {
           })}
         </div>
         {/* Suggestion video right sidebar section  */}
-        <div className="flex flex-col flex-wrap overscroll-y-auto	">
+        <div className="flex flex-col">
           <div>
             <LiveChat />
           </div>
@@ -135,8 +135,8 @@ const Watchpage = () => {
                       src={info?.snippet?.thumbnails?.default?.url}
                       alt="thumails"
                     />
-                    <ul className="ml-2">
-                      <li className="font-bold text-sm text-gray w-[28rem] text-ellipsis overflow-hidden "> 
+                    <ul className="ml-2 text-ellipsis overflow-hidden">
+                      <li className="font-bold text-sm text-gray w-[28rem]"> 
                         {info?.snippet?.title}
                       </li>
                       <li className="text-sm">{info?.snippet?.channelTitle}</li>
